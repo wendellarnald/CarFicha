@@ -1,12 +1,27 @@
 <ion-header>
-    <ion-navbar>
-      <ion-title>Fipe</ion-title>
-    </ion-navbar>
-  </ion-header>
+  <ion-navbar>
+    <ion-title>Fipe</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Selecione a montadora</ion-label>
+      <ion-select [(ngModel)]="mark" (ionChange)="SearchModel();">
+        <ion-option *ngFor="let c of marks">{{c.id}} - {{c.name}}</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Selecione o veículo</ion-label>
+      <ion-select [(ngModel)]="vehicle">
+        <ion-option *ngFor="let v of vehicles">{{v.fipe_name}}"></ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
   
-  <ion-content padding>
-    <h2>Welcome to Fipe!</h2>
-    <p>
-      Pesquise a tabela do seu veículo.
-    </p>
-  </ion-content>
+</ion-content>
