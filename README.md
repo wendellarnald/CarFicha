@@ -1,6 +1,6 @@
 # CarFicha
 
-Repository created for mobile development study in Ionic
+The purpose of this project is to provide information on vehicle values ​​by consulting an API from the FIP table.
 
 ## Author
 
